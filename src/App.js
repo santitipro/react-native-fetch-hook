@@ -9,15 +9,12 @@
 import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 
-import Navigator from '@Navigation';
-
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
     <SafeAreaView style={styles.app}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Navigator />
     </SafeAreaView>
   );
 };
@@ -25,11 +22,6 @@ const App = () => {
 const styles = {
   app: {
     flex: 1,
-  },
-  container: {
-    flex: 1,
-    paddingHorizontal: 20,
-    paddingVertical: 16,
   },
 };
 
