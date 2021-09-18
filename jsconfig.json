@@ -3,12 +3,14 @@
     "baseUrl": "./",
     "jsx": "react",
     "paths": {
+      "~/*": ["./*"],
       "@Screens/*": ["src/screens/*"],
       "@Components/*": ["src/components/*"],
       "@Navigation/*": ["src/navigation/*"],
       "@Config/*": ["src/config/*"],
       "@Constants/*": ["src/constants/*"],
       "@Services/*": ["src/services/*"],
+      "@hooks/*": ["src/hooks/*"],
       
     }
   },
