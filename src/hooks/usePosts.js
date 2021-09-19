@@ -20,7 +20,8 @@ function usePosts(filters) {
           isLoading: false,
           hasError: false,
         });
-      } catch {
+      } catch (error) {
+        console.log(error);
         setState({...state, isLoading: false, hasError: true});
       }
     }
